@@ -1,1 +1,2 @@
-const aboutMeData = "Innovative Computer Science student focusing on web development, with a passion for crafting responsive, user-centric interfaces. Proficient in MERN Stack and experienced in creating secure API workflows. Eager to apply my technical skills to deliver impactful software solutions in a fast-paced environment.";
+
+const aboutMeData = "I am a passionate Computer Science and engineering graduate and with a strong foundation in both web development and machine learning. Proficient in the MERN stack and Python, I enjoy building everything from responsive, user-centric web applications to intelligent predictive models. I am eager to leverage my diverse technical skill set to solve complex problems and deliver impactful software solutions.";

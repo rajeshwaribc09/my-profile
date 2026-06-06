@@ -45,15 +45,17 @@ function renderSkills() {
 
             //create icon
             const iconBox = document.createElement("div");
-            iconBox.className = "w-14 h-14 mb-4 bg-indigo-50 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300";
+            iconBox.className = "w-14 h-14 mb-4 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300";
 
-            //create icon text
-            const iconText = document.createElement("span");
-            iconText.className = "text-xl text-indigo-600 dark:text-indigo-400 font-bold";
-            iconText.textContent = skill.shortLabel;
-
-            //Put icon text inside icon box
-            iconBox.appendChild(iconText);
+            if (skill.icon) {
+                iconBox.innerHTML = skill.icon;
+            } else {
+                // fallback to icon text
+                const iconText = document.createElement("span");
+                iconText.className = "text-xl font-bold";
+                iconText.textContent = skill.shortLabel;
+                iconBox.appendChild(iconText);
+            }
 
             // create skill name 
             const skillName = document.createElement("h3");

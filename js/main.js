@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded",function(){
     initThemeToggle();
     searchProjects();
     renderEducation();
-    renderExperience();
     // renderCertifications();
     // renderHackathons();
 
